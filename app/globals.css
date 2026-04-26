@@ -1,12 +1,17 @@
 @import 'tailwindcss';
 
 :root {
-  --primary: #0c1e3a;
+  --primary: #0e213a;
   --primary-light: #1a3a5f;
+  --primary-transparent: #0e213af2;
   --accent: #c9a84c;
   --accent-secondary: #f0d78c;
+
+  /* Text Colors */
   --text-primary: #f5f3ee;
   --text-secondary: #6b7280;
+  --text-header: #faf8f5cc;
+  --text-footer: #faf8f599;
 }
 
 @theme inline {
@@ -16,6 +21,8 @@
   --color-accent-secondary: var(--accent-secondary);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
+  --color-text-header: var(--text-header);
+  --color-text-footer: var(--text-footer);
   --font-inter: var(--font-inter);
 }
 
