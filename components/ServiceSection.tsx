@@ -51,11 +51,11 @@ export default function ServiceSection() {
             const Icon = service.icon;
             return (
               <div
-                className="border-primary-light border px-6 py-10 text-left"
+                className="group border-primary-light hover:border-accent border px-6 py-10 text-left transition-all duration-300 hover:scale-105"
                 key={service.title}
               >
                 {/* Ícone */}
-                <Icon className="text-accent mb-6 text-4xl" />
+                <Icon className="text-accent mb-6 text-4xl transition-transform duration-300 group-hover:scale-110" />
                 {/* Título do card */}
                 <h3 className="font-playfair text-text-primary mb-4 text-lg font-bold">
                   {service.title}
