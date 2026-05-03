@@ -4,6 +4,7 @@
   --primary: #0e213a;
   --primary-light: #1a3a5f;
   --primary-transparent: #0e213af2;
+  --primary-offwhite: #faf8f5;
   --accent: #c9a84c;
   --accent-secondary: #f0d78c;
 
@@ -17,6 +18,8 @@
 @theme inline {
   --color-primary: var(--primary);
   --color-primary-light: var(--primary-light);
+  --color-primary-transparent: var(--primary-transparent);
+  --color-primary-offwhite: var(--primary-offwhite);
   --color-accent: var(--accent);
   --color-accent-secondary: var(--accent-secondary);
   --color-text-primary: var(--text-primary);
@@ -24,6 +27,7 @@
   --color-text-header: var(--text-header);
   --color-text-footer: var(--text-footer);
   --font-inter: var(--font-inter);
+  --font-playfair: var(--font-playfair);
 }
 
 @media (prefers-color-scheme: dark) {
