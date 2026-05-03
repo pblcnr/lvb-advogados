@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { FaArrowRight } from 'react-icons/fa';
 
 export default function Hero() {
   return (
@@ -26,9 +28,13 @@ export default function Hero() {
           interesses no cenário digital e empresarial.
         </p>
         {/* Botão CTA */}
-        <button className="bg-accent text-primary mt-10 cursor-pointer rounded-xs px-8 py-3 text-sm font-semibold tracking-wider uppercase">
-          Fale Conosco →
-        </button>
+        <Link
+          href="/contato"
+          className="group border-accent text-accent hover:bg-accent hover:text-primary mt-12 inline-flex cursor-pointer items-center gap-2 rounded-xs border px-8 py-3 text-sm font-semibold tracking-widest uppercase transition-colors duration-300"
+        >
+          Fale Conosco
+          <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+        </Link>
       </div>
     </div>
   );

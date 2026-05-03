@@ -29,7 +29,7 @@ export default function Header() {
           />
           {/* Nav + Botão */}
           <div className="hidden items-center gap-8 md:flex">
-            <nav className="text-text-primary flex items-center gap-8 text-[14px] tracking-wider uppercase">
+            <nav className="text-text-primary flex items-center gap-8 text-[14px] tracking-wider uppercase outline-none">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
