@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function CTASection() {
   return (
-    <section className="bg-primary-light py-20">
+    <section className="bg-primary-light py-16">
       <div className="flex flex-col gap-4 text-center">
         {/* Título */}
         <h2 className="font-playfair text-text-primary text-3xl font-bold">
