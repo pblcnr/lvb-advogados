@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <>
       <header className="bg-primary fixed top-0 right-0 left-0 z-40 shadow-md">
-        <div className="mx-auto flex w-full items-center justify-between px-16 py-4">
+        <div className="mx-auto flex w-full items-center justify-between px-8 py-4 md:px-12">
           <Image
             src="/assets/logo-header.png"
             alt="Logo LVB Advogados"
@@ -27,22 +27,23 @@ export default function Header() {
             height={80}
             style={{ height: 'auto' }}
           />
-          {/* Nav desktop */}
-          <nav className="text-text-primary hidden items-center gap-8 text-[14px] tracking-wider uppercase md:flex">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className={pathname === link.href ? 'text-accent' : ''}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-          {/* Botão CONTATO desktop */}
-          <button className="bg-accent text-primary hidden cursor-pointer rounded-xs px-6 py-2 text-sm font-semibold tracking-wider uppercase md:block">
-            CONTATO
-          </button>
+          {/* Nav + Botão */}
+          <div className="hidden items-center gap-8 md:flex">
+            <nav className="text-text-primary flex items-center gap-8 text-[14px] tracking-wider uppercase">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className={pathname === link.href ? 'text-accent' : ''}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+            <button className="bg-accent text-primary cursor-pointer rounded-xs px-6 py-2 text-sm font-semibold tracking-wider uppercase">
+              CONTATO
+            </button>
+          </div>
           {/* Botão hambúrguer */}
           <button
             className="text-text-primary md:hidden"
@@ -58,12 +59,12 @@ export default function Header() {
         className={`bg-primary fixed top-[80px] right-0 z-40 h-auto w-full transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         {/* Links de navegação */}
-        <nav className="text-base text-text-primary flex flex-col px-6 tracking-wider uppercase">
+        <nav className="text-text-primary flex flex-col px-6 text-base tracking-wider uppercase">
           {navLinks.map((link) => (
             <Link
               key={link.label}
               href={link.href}
-              className={`border-b border-primary-light py-4 block ${pathname === link.href ? 'text-accent' : ''}`}
+              className={`border-primary-light block border-b py-4 ${pathname === link.href ? 'text-accent' : ''}`}
               onClick={() => setIsMenuOpen(false)}
             >
               {link.label}

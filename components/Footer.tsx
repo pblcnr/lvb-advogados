@@ -32,8 +32,8 @@ const offices = [
 export default function Footer() {
   return (
     <footer className="bg-primary">
-      <div className="mx-auto px-6 md:px-16 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="mx-auto px-6 py-16 md:px-16">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div className="flex flex-col gap-4">
             <Image
               src="/assets/logo-footer.png"
@@ -84,10 +84,10 @@ export default function Footer() {
         </div>
         <hr className="border-primary-light mt-12 border-t" />
         <div className="mt-8 block md:flex md:items-center md:justify-between">
-          <p className="text-text-secondary text-xs text-center md:text-left">
+          <p className="text-text-secondary text-center text-xs md:text-left">
             © 2026 LVB Advogados. Todos os direitos reservados.
           </p>
-          <div className="flex justify-center gap-4 mt-4 md:mt-0">
+          <div className="mt-4 flex justify-center gap-4 md:mt-0">
             <a
               href="#"
               className="text-text-footer hover:text-accent transition-colors"
