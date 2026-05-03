@@ -36,7 +36,7 @@ export default function TeamSection() {
           {socios.map((socio) => (
             <div key={socio.name} className="flex flex-col items-center gap-2">
               {/* Foto circular */}
-              <div className="w-48 h-48 rounded-full overflow-hidden">
+              <div className="h-48 w-48 overflow-hidden rounded-full">
                 <Image
                   src={socio.image}
                   alt={socio.name}
@@ -46,7 +46,9 @@ export default function TeamSection() {
                 />
               </div>
               {/* Nome e cargo */}
-              <h3 className="font-playfair text-primary text-xl font-bold">{socio.name}</h3>
+              <h3 className="font-playfair text-primary text-xl font-bold">
+                {socio.name}
+              </h3>
               <p className="text-text-secondary text-md">{socio.role}</p>
             </div>
           ))}
