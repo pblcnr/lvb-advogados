@@ -13,7 +13,7 @@ export default function ServicePage() {
       <CTASection
         title="Precisa de assessoria jurídica?"
         subtitle="Entre em contato e agende uma consulta com nossos especialistas."
-        className='bg-primary'
+        className="bg-primary"
       />
     </>
   );

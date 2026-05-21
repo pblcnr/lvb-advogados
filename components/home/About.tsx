@@ -9,11 +9,11 @@ export default function About() {
           {/* Coluna esquerda — conteúdo textual */}
           <div>
             {/* Label */}
-            <p className="text-accent text-sm font-semibold tracking-widest uppercase">
+            <p className="text-accent mb-3 text-sm font-semibold tracking-widest uppercase">
               Sobre Nós
             </p>
             {/* Título */}
-            <h2 className="font-playfair text-primary text-4xl font-normal">
+            <h2 className="font-playfair text-primary text-4xl font-bold">
               Compromisso com a{' '}
               <span className="text-accent font-bold italic">excelência</span>{' '}
               jurídica
