@@ -3,7 +3,7 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 const offices = [
   {
     city: 'Ribeirão Preto',
-    address: 'Av. Presidente Vargas, 2121 - Sala 1507, Jardim California',
+    address: 'Rua Milton José Robusti, 75 - Sala 109, Jardim Botânico',
     phone: '(16) 3632-3930',
   },
   {
