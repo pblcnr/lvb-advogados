@@ -1,5 +1,6 @@
 import PageBanner from '@/components/PageBanner';
 import HistorySection from '@/components/quem-somos/HistorySection';
+import ValueSection from '@/components/quem-somos/ValueSection';
 
 export default function QuemSomos() {
   return (
@@ -9,6 +10,7 @@ export default function QuemSomos() {
         subtitle="Conheça nossa história e nossos valores"
       />
       <HistorySection />
+      <ValueSection />
     </>
   );
 }
