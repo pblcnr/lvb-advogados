@@ -1,19 +1,26 @@
 import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 
-export default function CTASection() {
+interface CTASectionProps {
+  title: string;
+  subtitle: string;
+  className?: string;
+}
+
+export default function CTASection({
+  title,
+  subtitle,
+  className,
+}: CTASectionProps) {
   return (
-    <section className="bg-primary-light py-16">
+    <section className={`py-16 ${className ?? 'bg-primary-light'}`}>
       <div className="flex flex-col gap-4 text-center">
         {/* Título */}
         <h2 className="font-playfair text-text-primary text-3xl font-bold">
-          Precisa de assessoria jurídica especializada?
+          {title}
         </h2>
         {/* Subtítulo */}
-        <p className="text-text-footer text-md mx-auto max-w-xl">
-          Entre em contato e descubra como podemos ajudar sua empresa a crescer
-          com segurança jurídica.
-        </p>
+        <p className="text-text-footer text-md mx-auto max-w-xl">{subtitle}</p>
         {/* Botão CTA */}
         <Link
           href="/contato"

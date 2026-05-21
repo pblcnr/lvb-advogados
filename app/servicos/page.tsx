@@ -1,3 +1,4 @@
+import CTASection from '@/components/CTASection';
 import PageBanner from '@/components/PageBanner';
 import ServicesDetail from '@/components/servicos/ServicesDetail';
 
@@ -9,6 +10,11 @@ export default function ServicePage() {
         subtitle="Soluções jurídicas especializadas para cada necessidade"
       />
       <ServicesDetail />
+      <CTASection
+        title="Precisa de assessoria jurídica?"
+        subtitle="Entre em contato e agende uma consulta com nossos especialistas."
+        className='bg-primary'
+      />
     </>
   );
 }
