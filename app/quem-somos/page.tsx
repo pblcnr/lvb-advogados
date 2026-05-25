@@ -1,6 +1,6 @@
 import PageBanner from '@/components/PageBanner';
 import HistorySection from '@/components/quem-somos/HistorySection';
-import OfficeSection from '@/components/quem-somos/OfficeSection';
+import OfficeSection from '@/components/quem-somos/OfficesSection';
 import ValueSection from '@/components/quem-somos/ValueSection';
 
 export default function QuemSomos() {
