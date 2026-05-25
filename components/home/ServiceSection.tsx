@@ -37,7 +37,7 @@ const services = [
 export default function ServiceSection() {
   return (
     <section className="bg-primary py-16 md:py-30">
-      <div className="mx-auto max-w-7xl items-center px-6 text-center md:px-16">
+      <div className="mx-auto max-w-8xl items-center px-6 text-center md:px-16">
         {/* Label e título da seção */}
         <p className="text-accent text-sm font-semibold tracking-widest uppercase">
           Especialidades
