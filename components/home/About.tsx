@@ -3,9 +3,9 @@ import { FaArrowRight } from 'react-icons/fa';
 
 export default function About() {
   return (
-    <section className="bg-primary-offwhite py-30">
-      <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 items-center gap-20 md:grid-cols-2">
+    <section className="bg-primary-offwhite py-16 md:py-30">
+      <div className="max-w-8xl mx-auto px-6 md:px-16">
+        <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-20">
           {/* Coluna esquerda — conteúdo textual */}
           <div>
             {/* Label */}
@@ -13,7 +13,7 @@ export default function About() {
               Sobre Nós
             </p>
             {/* Título */}
-            <h2 className="font-playfair text-primary text-4xl font-bold">
+            <h2 className="font-playfair text-primary text-3xl font-bold md:text-4xl">
               Compromisso com a{' '}
               <span className="text-accent font-bold italic">excelência</span>{' '}
               jurídica
