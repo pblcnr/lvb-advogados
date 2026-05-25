@@ -25,10 +25,10 @@ const services = [
 
 export default function ValueSection() {
   return (
-    <section className="bg-primary py-30">
-      <div className="mx-auto max-w-7xl items-center text-center">
+    <section className="bg-primary py-16 md:py-30">
+      <div className="mx-auto max-w-7xl items-center px-6 text-center md:px-16">
         {/* Título da seção */}
-        <h2 className="font-playfair text-text-primary mt-2 mb-12 text-4xl font-bold">
+        <h2 className="font-playfair text-text-primary mt-2 mb-12 text-3xl font-bold md:text-4xl">
           Missão, Visão e Valores
         </h2>
         {/* Grid de cards */}
