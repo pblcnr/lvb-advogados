@@ -16,20 +16,20 @@ const offices = [
 export default function LocationSection() {
   return (
     <section className="bg-primary-offwhite py-20">
-      <div className="mx-auto max-w-7xl items-center text-center">
+      <div className="mx-auto max-w-7xl items-center px-6 text-center md:px-16">
         {/* Label e título da seção */}
         <p className="text-accent text-sm font-semibold tracking-widest uppercase">
           Localização
         </p>
-        <h2 className="font-playfair text-primary mt-2 mb-12 text-4xl font-bold">
+        <h2 className="font-playfair text-primary mt-2 mb-12 text-3xl font-bold md:text-4xl">
           Onde Estamos
         </h2>
         {/* Grid de escritórios */}
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10">
           {offices.map((office) => (
             <div
               key={office.city}
-              className="border border-gray-200 p-10 text-left"
+              className="border border-gray-200 p-6 text-left md:p-10"
             >
               {/* Ícone + cidade */}
               <div className="mb-4 flex items-center gap-2">
