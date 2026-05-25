@@ -16,7 +16,7 @@ const offices = [
 
 export default function MapsSection() {
   return (
-    <section className="bg-gray-100 py-20">
+    <section className="bg-gray-100 py-16 md:py-20">
       <div className="max-w-8xl mx-auto px-6 md:px-16">
         {/* Título da seção */}
         <motion.div
@@ -26,13 +26,13 @@ export default function MapsSection() {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           viewport={{ once: true }}
         >
-          <h2 className="font-playfair text-primary mb-12 text-4xl font-bold">
+          <h2 className="font-playfair text-primary mb-12 text-3xl font-bold md:text-4xl">
             Nossos Escritórios no Mapa
           </h2>
         </motion.div>
         {/* Grid de mapas */}
         <motion.div
-          className="grid grid-cols-1 gap-8 md:grid-cols-2"
+          className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
@@ -43,11 +43,12 @@ export default function MapsSection() {
               key={office.city}
               src={office.mapSrc}
               width="100%"
-              height="400"
+              height="300"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              className="md:h-[400px]"
             />
           ))}
         </motion.div>
