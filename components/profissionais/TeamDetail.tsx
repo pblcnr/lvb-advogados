@@ -2,61 +2,62 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import Image from 'next/image';
 
 const professionals = [
   {
-    name: 'Nome do Profissional 1',
-    role: 'Sócio Fundador',
+    name: 'Diego Fernandes Lima',
+    role: 'Sócio Administrador',
     specialty: 'Direito Digital e Propriedade Intelectual',
     oab: 'OAB/SP 000.000',
     bio: 'Formado pela Universidade de São Paulo, com especialização em Direito Digital. Atua há mais de 15 anos na área, com foco em proteção de dados e propriedade intelectual.',
     tags: ['Direito Digital', 'Propriedade Intelectual', 'LGPD'],
-    image: '/assets/team/placeholder.jpg',
+    image: '/assets/team/diego.jpg',
   },
   {
-    name: 'Nome do Profissional 2',
-    role: 'Sócia Fundadora',
+    name: 'Isadora Valochi Arantes',
+    role: 'Sócia Administradora',
     specialty: 'Direito Concorrencial e Empresarial',
     oab: 'OAB/SP 000.000',
     bio: 'Formado pela Universidade de São Paulo, com especialização em Direito Digital. Atua há mais de 15 anos na área, com foco em proteção de dados e propriedade intelectual.',
     tags: ['Direito Digital', 'Propriedade Intelectual', 'LGPD'],
-    image: '/assets/team/placeholder.jpg',
+    image: '/assets/team/isadora.jpg',
   },
   {
-    name: 'Nome do Profissional 3',
-    role: 'Advogado Associado',
+    name: 'Arthur Simões Baldochi',
+    role: 'Sócio Administrador',
     specialty: 'Direito Empresarial',
     oab: 'OAB/SP 000.000',
     bio: 'Formado pela Universidade de São Paulo, com especialização em Direito Digital. Atua há mais de 15 anos na área, com foco em proteção de dados e propriedade intelectual.',
     tags: ['Direito Digital', 'Propriedade Intelectual', 'LGPD'],
-    image: '/assets/team/placeholder.jpg',
+    image: '/assets/team/arthur.jpg',
   },
   {
-    name: 'Nome do Profissional 4',
-    role: 'Advogado Associado',
+    name: 'Júlia Rodrigues Alves',
+    role: 'Sócia',
     specialty: 'Direito Digital e Propriedade Intelectual',
     oab: 'OAB/SP 000.000',
     bio: 'Formado pela Universidade de São Paulo, com especialização em Direito Digital. Atua há mais de 15 anos na área, com foco em proteção de dados e propriedade intelectual.',
     tags: ['Direito Digital', 'Propriedade Intelectual', 'LGPD'],
-    image: '/assets/team/placeholder.jpg',
+    image: '/assets/team/julia.jpg',
   },
   {
-    name: 'Nome do Profissional 5',
-    role: 'Advogada Associada',
+    name: 'Rafael Garcia Nubes',
+    role: 'Sócio',
     specialty: 'Direito Concorrencial e Empresarial',
     oab: 'OAB/SP 000.000',
     bio: 'Formado pela Universidade de São Paulo, com especialização em Direito Digital. Atua há mais de 15 anos na área, com foco em proteção de dados e propriedade intelectual.',
     tags: ['Direito Digital', 'Propriedade Intelectual', 'LGPD'],
-    image: '/assets/team/placeholder.jpg',
+    image: '/assets/team/rafael.jpg',
   },
   {
-    name: 'Nome do Profissional 6',
-    role: 'Advogado Associado',
+    name: 'Rafaela Polo',
+    role: 'Sócia',
     specialty: 'Direito Empresarial',
     oab: 'OAB/SP 000.000',
     bio: 'Formado pela Universidade de São Paulo, com especialização em Direito Digital. Atua há mais de 15 anos na área, com foco em proteção de dados e propriedade intelectual.',
     tags: ['Direito Digital', 'Propriedade Intelectual', 'LGPD'],
-    image: '/assets/team/placeholder.jpg',
+    image: '/assets/team/rafaela.jpg',
   },
 ];
 
@@ -87,9 +88,15 @@ export default function TeamDetail() {
               key={professional.name}
               className="flex flex-col items-center border border-gray-200 p-8 text-center md:p-12"
             >
-              {/* Foto circular placeholder */}
-              <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-full border-2 border-dashed border-gray-300 text-sm text-gray-400 md:h-32 md:w-32">
-                Foto
+              {/* Foto circular */}
+              <div className="h-48 w-48 overflow-hidden rounded-full">
+                <Image
+                  src={professional.image}
+                  alt={professional.name}
+                  width={192}
+                  height={192}
+                  className="object-cover object-top"
+                />
               </div>
               {/* Nome */}
               <h3 className="font-playfair text-primary mb-1 text-lg font-bold md:text-xl">
