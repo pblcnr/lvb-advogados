@@ -36,17 +36,17 @@ const services = [
 
 export default function ServiceSection() {
   return (
-    <section className="bg-primary py-30">
-      <div className="mx-auto max-w-7xl items-center text-center">
+    <section className="bg-primary py-16 md:py-30">
+      <div className="mx-auto max-w-7xl items-center px-6 text-center md:px-16">
         {/* Label e título da seção */}
         <p className="text-accent text-sm font-semibold tracking-widest uppercase">
           Especialidades
         </p>
-        <h2 className="font-playfair text-text-primary mt-2 mb-12 text-4xl font-bold">
+        <h2 className="font-playfair text-text-primary mt-2 mb-12 text-3xl font-bold md:text-4xl">
           Áreas de Atuação
         </h2>
         {/* Grid de cards de serviços */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
           {services.map((service) => {
             const Icon = service.icon;
             return (
