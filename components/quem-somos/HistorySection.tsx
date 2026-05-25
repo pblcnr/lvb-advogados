@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 export default function HistorySection() {
   return (
-    <section className="bg-primary-offwhite py-30">
-      <div className="mx-auto max-w-7xl px-6 md:px-16">
+    <section className="bg-primary-offwhite py-16 md:py-30">
+      <div className="mx-auto max-w-8xl px-6 md:px-16">
         <motion.div
-          className="grid grid-cols-1 items-center gap-20 md:grid-cols-2"
+          className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-20"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -19,7 +19,7 @@ export default function HistorySection() {
               Nossa História
             </p>
             {/* Título */}
-            <h2 className="font-playfair text-primary text-4xl font-bold">
+            <h2 className="font-playfair text-primary text-3xl font-bold md:text-4xl">
               Tradição e{' '}
               <span className="text-accent font-bold italic">inovação</span>{' '}
               caminham juntas
@@ -43,7 +43,7 @@ export default function HistorySection() {
           </div>
           {/* Coluna direita — imagem do escritório */}
           <div>
-            <div className="flex h-80 w-full items-center justify-center rounded border-2 border-dashed border-gray-300 text-gray-400">
+            <div className="flex h-64 w-full items-center justify-center rounded border-2 border-dashed border-gray-300 text-gray-400 md:h-80">
               Foto do escritório
             </div>
           </div>
