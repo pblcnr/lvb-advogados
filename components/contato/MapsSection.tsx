@@ -16,8 +16,8 @@ const offices = [
 
 export default function MapsSection() {
   return (
-    <section className="bg-primary-offwhite py-20">
-      <div className="mx-auto max-w-7xl px-6 md:px-16">
+    <section className="bg-gray-100 py-20">
+      <div className="max-w-8xl mx-auto px-6 md:px-16">
         {/* Título da seção */}
         <motion.div
           className="text-center"
