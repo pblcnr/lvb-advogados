@@ -68,8 +68,8 @@ const services = [
 
 export default function ServicesDetail() {
   return (
-    <section className="bg-primary-offwhite py-20">
-      <div className="mx-auto max-w-7xl px-6 md:px-4">
+    <section className="bg-primary-offwhite py-16 md:py-20">
+      <div className="max-w-8xl mx-auto px-6 md:px-16">
         {services.map((service, index) => {
           const Icon = service.icon;
 
@@ -79,7 +79,7 @@ export default function ServicesDetail() {
                 <div className="bg-accent/10 inline-flex w-fit p-4">
                   <Icon className="text-accent text-3xl" />
                 </div>
-                <h2 className="font-playfair text-primary text-3xl font-bold">
+                <h2 className="font-playfair text-primary text-2xl font-bold md:text-3xl">
                   {service.title}
                 </h2>
               </div>
@@ -90,7 +90,7 @@ export default function ServicesDetail() {
           );
 
           const listSide = (
-            <div className="bg-accent/5 border-accent/20 border p-8">
+            <div className="bg-accent/5 border-accent/20 border p-6 md:p-8">
               <p className="text-accent mb-6 text-xs font-semibold tracking-widest uppercase">
                 Áreas de Atuação
               </p>
@@ -116,21 +116,23 @@ export default function ServicesDetail() {
               transition={{ duration: 0.6, ease: 'easeOut' }}
               viewport={{ once: true }}
             >
-              <div className="grid grid-cols-1 items-start gap-16 md:grid-cols-2">
+              <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-2 md:gap-16">
                 {index % 2 !== 0 ? (
                   <>
-                    {listSide}
-                    {contentSide}
+                    <div className="order-last md:order-first">{listSide}</div>
+                    <div className="order-first md:order-last">
+                      {contentSide}
+                    </div>
                   </>
                 ) : (
                   <>
-                    {contentSide}
-                    {listSide}
+                    <div>{contentSide}</div>
+                    <div>{listSide}</div>
                   </>
                 )}
               </div>
               {index < services.length - 1 && (
-                <hr className="my-16 border-gray-200" />
+                <hr className="my-10 border-gray-200 md:my-16" />
               )}
             </motion.div>
           );
