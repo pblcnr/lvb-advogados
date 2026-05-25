@@ -66,10 +66,10 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="bg-primary-offwhite py-20">
+    <section className="bg-primary-offwhite py-16 md:py-20">
       <div className="max-w-8xl mx-auto px-6 md:px-16">
         <motion.div
-          className="grid grid-cols-1 gap-16 md:grid-cols-2"
+          className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -77,7 +77,7 @@ export default function ContactForm() {
         >
           {/* Coluna esquerda — formulário */}
           <div>
-            <h2 className="font-playfair text-primary mb-2 text-3xl font-bold">
+            <h2 className="font-playfair text-primary mb-2 text-2xl font-bold md:text-3xl">
               Envie uma mensagem
             </h2>
             <p className="text-text-secondary mb-8 text-sm">
@@ -86,7 +86,7 @@ export default function ContactForm() {
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               {/* Nome e E-mail */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <input
                   type="text"
                   placeholder="Nome completo"
@@ -109,7 +109,7 @@ export default function ContactForm() {
                 />
               </div>
               {/* Telefone e Assunto */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <input
                   type="tel"
                   placeholder="Telefone"
@@ -145,7 +145,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="bg-accent text-primary hover:bg-accent-secondary inline-flex w-fit cursor-pointer items-center gap-2 px-8 py-3 text-sm font-semibold tracking-widest uppercase transition-colors disabled:cursor-not-allowed disabled:opacity-50"
+                className="bg-accent text-primary hover:bg-accent-secondary inline-flex w-fit cursor-pointer items-center gap-2 px-6 py-2 text-sm font-semibold tracking-widest uppercase transition-colors disabled:cursor-not-allowed disabled:opacity-50 md:px-8 md:py-3"
               >
                 <FaPaperPlane size={14} />
                 {status === 'loading' ? 'Enviando...' : 'Enviar Mensagem'}
@@ -167,7 +167,7 @@ export default function ContactForm() {
           {/* Coluna direita — informações de contato */}
           <div className="flex flex-col gap-8">
             <div>
-              <h3 className="font-playfair text-primary mb-6 text-2xl font-bold">
+              <h3 className="font-playfair text-primary mb-6 text-xl font-bold md:text-2xl">
                 Informações de Contato
               </h3>
               {/* WhatsApp */}
