@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function HistorySection() {
   return (
     <section className="bg-primary-offwhite py-16 md:py-30">
-      <div className="mx-auto max-w-8xl px-6 md:px-16">
+      <div className="max-w-8xl mx-auto px-6 md:px-16">
         <motion.div
           className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-20"
           initial={{ opacity: 0, y: 40 }}

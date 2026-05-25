@@ -23,7 +23,7 @@ const socios = [
 export default function TeamSection() {
   return (
     <section className="bg-primary-offwhite py-16 md:py-30">
-      <div className="mx-auto max-w-8xl items-center px-6 text-center md:px-16">
+      <div className="max-w-8xl mx-auto items-center px-6 text-center md:px-16">
         {/* Label e título da seção */}
         <p className="text-accent text-sm font-semibold tracking-widest uppercase">
           Nossa Equipe

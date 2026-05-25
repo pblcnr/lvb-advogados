@@ -30,7 +30,7 @@ export default function Hero() {
         {/* Botão CTA */}
         <Link
           href="/contato"
-          className="group border-accent text-accent hover:bg-accent hover:text-primary mt-8 md:mt-12 inline-flex cursor-pointer items-center gap-2 rounded-xs border px-6 py-2 md:px-8 md:py-3 text-sm font-semibold tracking-widest uppercase transition-colors duration-300"
+          className="group border-accent text-accent hover:bg-accent hover:text-primary mt-8 inline-flex cursor-pointer items-center gap-2 rounded-xs border px-6 py-2 text-sm font-semibold tracking-widest uppercase transition-colors duration-300 md:mt-12 md:px-8 md:py-3"
         >
           Fale Conosco
           <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />

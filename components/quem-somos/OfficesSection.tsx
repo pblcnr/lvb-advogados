@@ -16,7 +16,7 @@ const offices = [
 export default function OfficesSection() {
   return (
     <section className="bg-primary-offwhite py-16 md:py-20">
-      <div className="mx-auto max-w-8xl px-6 md:px-16">
+      <div className="max-w-8xl mx-auto px-6 md:px-16">
         {/* Label e título da seção */}
         <motion.div
           className="text-center"
