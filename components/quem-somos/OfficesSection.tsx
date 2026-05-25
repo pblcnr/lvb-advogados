@@ -15,8 +15,8 @@ const offices = [
 
 export default function OfficesSection() {
   return (
-    <section className="bg-primary-offwhite py-20">
-      <div className="mx-auto max-w-7xl px-6 md:px-16">
+    <section className="bg-primary-offwhite py-16 md:py-20">
+      <div className="mx-auto max-w-8xl px-6 md:px-16">
         {/* Label e título da seção */}
         <motion.div
           className="text-center"
@@ -28,13 +28,13 @@ export default function OfficesSection() {
           <p className="text-accent text-sm font-semibold tracking-widest uppercase">
             Nossos Escritórios
           </p>
-          <h2 className="font-playfair text-primary mt-2 mb-12 text-4xl font-bold">
+          <h2 className="font-playfair text-primary mt-2 mb-12 text-3xl font-bold md:text-4xl">
             Onde Estamos
           </h2>
         </motion.div>
         {/* Grid de escritórios */}
         <motion.div
-          className="grid grid-cols-1 gap-16 md:grid-cols-2"
+          className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
@@ -43,7 +43,7 @@ export default function OfficesSection() {
           {offices.map((office) => (
             <div key={office.city}>
               {/* Placeholder de imagem */}
-              <div className="flex h-64 w-full items-center justify-center rounded border-2 border-dashed border-gray-300 text-gray-400">
+              <div className="flex h-48 w-full items-center justify-center rounded border-2 border-dashed border-gray-300 text-gray-400 md:h-64">
                 Foto do escritório de {office.city}
               </div>
               {/* Ícone + cidade */}
