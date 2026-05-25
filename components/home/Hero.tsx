@@ -17,20 +17,20 @@ export default function Hero() {
         {/* Linha decorativa */}
         <div className="bg-accent mb-8 h-px w-12" />
         {/* Título principal */}
-        <h1 className="text-text-primary font-playfair mx-auto max-w-3xl text-4xl leading-tight font-bold md:text-7xl">
+        <h1 className="text-text-primary font-playfair mx-auto max-w-3xl text-3xl leading-tight font-bold md:text-7xl">
           Advocacia{' '}
           <span className="text-accent font-playfair italic">inteligente</span>{' '}
           para um mundo em transformação
         </h1>
         {/* Subtítulo */}
-        <p className="text-text-secondary mx-auto mt-6 max-w-xl text-lg">
+        <p className="text-text-secondary mx-auto mt-6 max-w-xl text-base md:text-lg">
           Soluções jurídicas inovadoras e personalizadas para proteger seus
           interesses no cenário digital e empresarial.
         </p>
         {/* Botão CTA */}
         <Link
           href="/contato"
-          className="group border-accent text-accent hover:bg-accent hover:text-primary mt-12 inline-flex cursor-pointer items-center gap-2 rounded-xs border px-8 py-3 text-sm font-semibold tracking-widest uppercase transition-colors duration-300"
+          className="group border-accent text-accent hover:bg-accent hover:text-primary mt-8 md:mt-12 inline-flex cursor-pointer items-center gap-2 rounded-xs border px-6 py-2 md:px-8 md:py-3 text-sm font-semibold tracking-widest uppercase transition-colors duration-300"
         >
           Fale Conosco
           <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
