@@ -40,9 +40,12 @@ export default function Header() {
                 </Link>
               ))}
             </nav>
-            <button className="bg-accent text-primary cursor-pointer rounded-xs px-6 py-2 text-sm font-semibold tracking-wider uppercase">
+            <Link
+              href="/contato"
+              className="bg-accent text-primary cursor-pointer rounded-xs px-6 py-2 text-sm font-semibold tracking-wider uppercase"
+            >
               CONTATO
-            </button>
+            </Link>
           </div>
           {/* Botão hambúrguer */}
           <button
@@ -72,10 +75,14 @@ export default function Header() {
           ))}
         </nav>
         {/* Botão CONTATO mobile */}
-        <div className="mt-8 px-6">
-          <button className="bg-accent text-primary w-full cursor-pointer rounded-xs px-6 py-2 text-sm font-semibold tracking-wider uppercase">
+        <div className="mt-8 px-6 pb-8">
+          <Link
+            href="/contato"
+            onClick={() => setIsMenuOpen(false)}
+            className="bg-accent text-primary block w-full cursor-pointer rounded-xs px-6 py-2 text-center text-sm font-semibold tracking-wider uppercase"
+          >
             CONTATO
-          </button>
+          </Link>
         </div>
       </div>
     </>
