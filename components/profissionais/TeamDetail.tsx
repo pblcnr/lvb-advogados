@@ -72,11 +72,11 @@ export default function TeamDetail() {
   };
 
   return (
-    <section className="bg-primary-offwhite py-20">
+    <section className="bg-primary-offwhite py-16 md:py-20">
       <div className="max-w-8xl mx-auto px-6 md:px-16">
         {/* Grid de profissionais */}
         <motion.div
-          className="grid grid-cols-1 gap-8 md:grid-cols-3"
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-8"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -85,14 +85,14 @@ export default function TeamDetail() {
           {professionals.map((professional, index) => (
             <div
               key={professional.name}
-              className="flex flex-col items-center border border-gray-200 p-12 text-center"
+              className="flex flex-col items-center border border-gray-200 p-8 text-center md:p-12"
             >
               {/* Foto circular placeholder */}
-              <div className="mb-6 flex h-32 w-32 items-center justify-center rounded-full border-2 border-dashed border-gray-300 text-sm text-gray-400">
+              <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-full border-2 border-dashed border-gray-300 text-sm text-gray-400 md:h-32 md:w-32">
                 Foto
               </div>
               {/* Nome */}
-              <h3 className="font-playfair text-primary mb-1 text-xl font-bold">
+              <h3 className="font-playfair text-primary mb-1 text-lg font-bold md:text-xl">
                 {professional.name}
               </h3>
               {/* Cargo */}
